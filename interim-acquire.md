@@ -7,9 +7,10 @@ Conditions necessary for a correct acquisition.
 - Ensure CCCR Loaded
 - Desired sample rate selected
 - Check System status (From "Quartz ADC Status" screen)
-    - Active firmware image: `Appl` (`Img.` column)
+    - Active firmware image: `Appl` (`FW Active` column)
+    - Acquiring (`Acq.` column)
     - PPS Locked.  (`Samp. Clk. Lock` columns)
-    - DRDY ok (`DRDY` column)
+    - DRDY ok (`DRDY status` columns)
     - Network packet drop rates zero (`Pkt Drop` column)
 
 ![Quartz ADC Status](adc-status.png)
@@ -22,6 +23,7 @@ Conditions necessary for a correct acquisition.
 
 1. Disable Sampling if monitoring.  (from Main screen and others)
 1. Launch `atf-acquire` on `DAQS` host.
+    - `ssh 192.168.83.100`
     - Will run until acquisition completes.
     - Will print "60 seconds elapsed"
 1. Note "Last recording name" on `Acq. Recording` Monitor or Expert screens.
@@ -37,6 +39,8 @@ While acquisition is in-progress, observe that:
 - On `ADC Status` screen.
     - PPS Locked
     _ DRDY ok
+
+![Quartz Acquisition Status](acq-status.png)
 
 ## 5. Stop Acquire
 
@@ -72,9 +76,29 @@ If requested.
 1. Click on on `Open` or `Mount`.
 1. Copy the appropriate `.uff` file.
     - This may take a long time.
-1. Through the `Disks & Devices` menu, `Eject` the USB storage device.
+1. Through the `Disks & Devices` menu, `Eject` or `Safely Remove` the USB storage device.
     - This may also take a long time.
     - __Do not disconnect__ USB storage until notified that it is safe to do so,
       or until the device has disappeared from the `Disks & Devices` menu.
 
-![Disks & Devices](disk-device.png)
+![Disks & Devices Present](disks-present.png)
+
+![Disks & Devices Empty](disk-device.png)
+
+## Example Output
+
+Beginning of an acquisition.
+
+![Acquisition start](acq1.png)
+
+Completed acquisition.
+
+![Acquisition end](acq-complete.png)
+
+Initiate conversion.
+
+![Convert start](convert1.png)
+
+Conversion complete
+
+![Convert end](convert2.png)
