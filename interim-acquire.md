@@ -57,6 +57,8 @@ While acquisition is in-progress, observe that:
 
 Note `/data` on the `DAQS` host is visible as `/data` on both Workstations.
 
+Note: Change directory to proper data folder to find the *.json file.
+
 ## 7.1 Export via. Network
 
 Default.
