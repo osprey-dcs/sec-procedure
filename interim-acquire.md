@@ -13,7 +13,7 @@ Conditions necessary for a correct acquisition.
     - DRDY ok (`DRDY status` columns)
     - Network packet drop rates zero (`Pkt Drop` column)
 
-![Quartz ADC Status](adc-status.png)
+![Quartz ADC Status](img/adc-status.png)
 
 ## 2. Preparation
 
@@ -40,7 +40,7 @@ While acquisition is in-progress, observe that:
     - PPS Locked
     _ DRDY ok
 
-![Quartz Acquisition Status](acq-status.png)
+![Quartz Acquisition Status](img/acq-status.png)
 
 ## 5. Stop Acquire
 
@@ -83,24 +83,24 @@ If requested.
     - __Do not disconnect__ USB storage until notified that it is safe to do so,
       or until the device has disappeared from the `Disks & Devices` menu.
 
-![Disks & Devices Present](disks-present.png)
+![Disks & Devices Present](img/disks-present.png)
 
-![Disks & Devices Empty](disk-device.png)
+![Disks & Devices Empty](img/disk-device.png)
 
 ## Example Output
 
 Beginning of an acquisition.
 
-![Acquisition start](acq1.png)
+![Acquisition start](img/acq1.png)
 
 Completed acquisition.
 
-![Acquisition end](acq-complete.png)
+![Acquisition end](img/acq-complete.png)
 
 Initiate conversion.
 
-![Convert start](convert1.png)
+![Convert start](img/convert1.png)
 
 Conversion complete
 
-![Convert end](convert2.png)
+![Convert end](img/convert2.png)
