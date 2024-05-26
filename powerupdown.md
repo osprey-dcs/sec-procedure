@@ -75,6 +75,10 @@ or when it is otherwise desirable to ascertain system health.
     1. If still out of sync. contact support
 1. Set `ADC Acquire` to `Enable`
     1. All `Acq.` should show `Run`.
+1. Observe that the `Pkt Drop` rate counters remain zero for a period of 30 seconds
+    1. If packets are being dropped....
+    1. For 250K sample rate, some chassis will need to be disabled.
+    1. For other sample rates, contact support
 
 
 ![Quartz Acquisition Status](img/acq-status.png)
