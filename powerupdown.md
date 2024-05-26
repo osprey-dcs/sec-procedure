@@ -81,7 +81,7 @@ or when it is otherwise desirable to ascertain system health.
     1. For other sample rates, contact support
 
 
-![Quartz Acquisition Status](img/acq-status.png)
+![Quartz ADC Status](img/adc-status.png)
 
 
 ## References

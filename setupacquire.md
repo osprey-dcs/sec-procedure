@@ -1,4 +1,4 @@
-# Configuration and Acqusition
+# Configuration and Acquisition
 
 ## Prerequisites
 
@@ -7,13 +7,13 @@ Successful completion of [Recovery and Troubleshooting](powerupdown.md).
 It is necessary to repeat Recovery and Troubleshooting after
 any chassis is power cycled or otherwise reset.
 
-It is recommended to repeat [Recovery and Troubleshooting](powerupdown.md)
+It is recommended to repeat Recovery and Troubleshooting
 at the start of each day on which records will be collected.
 
 
 ## Loading Configuration
 
-Configuration should be loaded prior to any Acqusition run,
+Configuration should be loaded prior to any Acquisition run,
 and may be re-loaded at any time afterwards.
 
 Be aware that a re-load involves pulsing all AC/DC coupling
@@ -39,7 +39,7 @@ relays, which may cause glitches in ADC data.
     1. After changing the sampling rate, repeat [Recovery and Troubleshooting](powerupdown.md).
 1. Set the desired `Run Description` string.
 
-## Start Acqusition
+## Start Acquisition
 
 1. Open the `Acq. Control` OPI
 1. Ensure `System Ready?` shows `Ready`.
@@ -54,9 +54,9 @@ relays, which may cause glitches in ADC data.
 1. `ADC Acquire` will switch back to `Enable` automatically
 1. `Last Started Name` will update with the current run name.
 
-Note that `Can Start?` will show `Not ready` while an acqusition is running.
+Note that `Can Start?` will show `Not ready` while an acquisition is running.
 
-## Monitor Acqusition
+## Monitor Acquisition
 
 While acquisition is in-progress, observe that:
 
@@ -68,7 +68,7 @@ While acquisition is in-progress, observe that:
 - On `ADC Status` screen.
     - `Summary` for all `In Use` shows `Ok`
 
-## End Acqusition
+## End Acquisition
 
 1. On the `Acq. Control` OPI
 1. Click `Stop`.

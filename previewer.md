@@ -45,7 +45,7 @@ and `Channels` are remembered by the `viewer` application.
 1. Choose `Out File Type` as `UFF58b` or `CSV`
 1. Choose `Time Range` as either `All Time` or `From Start/End` (Selectors on main UI)
 1. Choose a list of channel numbers.  eg.
-    1. `1-1024` selects all availible channels.
+    1. `1-1024` selects all available channels.
     1. `513` selects a single channel
     1. `1-25,43` selects a range and an individual channel
     1. `500-600,800-900` selects two ranges
