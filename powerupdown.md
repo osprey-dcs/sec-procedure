@@ -9,7 +9,7 @@ See Reference photos section below.
 
 Preparation for partial/total power outage.
 
-1. Switch off power to all 32x Quartz Chassis in Instrument room
+1. Switch off power to all 32x Quartz Chassis in the Instrument room
 1. Press and quickly release power button on each computer
     1. DAQS server (Instrument room)
     1. MISC server (Control room)
