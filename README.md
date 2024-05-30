@@ -1,6 +1,8 @@
 # ATF SEC DAQ Procedures
 
 Current Active Operator Procedues:
+- D.4.1 - Functional Checkout Procedure (tbd)
+- D.4.2 - Measurement Device Calibration Procedure (tbd)
 - D.4.3 - [Start-up and Shut-down](powerupdown.md) Procedure
 - D.4.4 - [Per Test User Configuration Procedure](load-configuration.md)
 - D.4.5 - [Making a Recording Procedure](setupacquire.md)
