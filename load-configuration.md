@@ -1,35 +1,22 @@
-# CCCR Configuration Loader
+# Per Test User Configuration Procedure
 
-Reads CCCR Configuration CSV file to EPICS Database, and outputs CSV of put values.
+Configuration should be loaded prior to any Acquisition run,
+and may be re-loaded at any time afterwards.
 
-## 1. Prerequisites
+Be aware that a re-load involves pulsing all AC/DC coupling
+relays, which may cause glitches in ADC data.
 
-Conditions necessary to load CCCR Configuration:
-- CCCR Configuration CSV must be formatted correctly.
-- EPICS Database must be running.
+1. Select one of the two Workstation computers.
+1. Copy a `.csv` file onto that Workstation.
+1. Navigate to the `CCCR Upload` OPI.
+1. Under `Select file`, either:
+    1. Click on the open icon and select a file and click `Open`.
+       The path of the selected file will appear in the adjacent field.
+    1. Alternately, type or paste a path into the field.
+1. Click on the `Load` button.
+1. Wait for the `Busy` indicator to clear.
+1. Under `Previous result`,
+   If the `Status` indicator indicates failure,
+   check the last error message and notify support.
 
-### EPICS Database Requirements
-
-Record pattern: "FDAS:\<CHASSIS\>:SA:Ch\<CHANNEL\>:\<DOMAIN>"
-
-Alarm pattern:  "FDAS:\<CHASSIS\>:ACQ:\<DOMAIN\>:\<CHANNEL\>"
-
-## 2 Configurer script
-
-1. To run script `configurer.py` from console with arguments for input and output:
-
-    ```
-    $ python configurer.py -i /path/to/<file_name>.csv -o /path/to/output/ -v
-    Input file: /path/to/<file_name>.csv
-    Output file: /path/to/output/output.csv
-    ...
-    ```
-
-    The script will create `output.csv` in the folder to which `-o` points. Add `-v` for verbose output.
-
-1. Configurer opens csv file, and converts values in cells according to their data type in the table above. 
-
-1. If the column "USE" indicates "yes", Configurer will put the value to the EPICS record.
-
-1. Finally, Configurer writes the output table.
-
+__Note__ In case of failure, it is necessary to re-load a previously good Configuration.
