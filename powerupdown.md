@@ -5,21 +5,31 @@ as well as system recovery after individual chassis power cycle.
 
 See Reference photos section below.
 
+## Note on Computer Shutdown
+
+Each computer may be requested to shutdown by one of the following methods
+
+- Press and quickly release power button
+- Issue a `sudo poweroff`
+- For Workstations only.  Select `Shutdown` from the system menu (lower left corner)
+
 ## System Power Down
 
 Preparation for partial/total power outage.
 
+If possible, save open documents on Workstations.
+
 1. Switch off power to all 32x Quartz Chassis in the Instrument room
-1. Press and quickly release power button on each computer
+1. Initiate a graceful shutdown of each computer
     1. DAQS server (Instrument room)
     1. MISC server (Control room)
     1. Workstation 1 (Control room)
     1. Workstation 2 (Control room)
 1. Wait for computers to complete normal shutdown.
-    - Indicated by fans stopping
+    - Indicated by power LEDs turning off
     - If this takes more than 5 minutes, endeavor to contact support
     - If support is unavailable in the available time,
-      press and hold power button until fans stop.
+      press and hold power button until LEDs turn off.
       (__Caution__, may result in data loss)
 
 ## System Power Up
@@ -27,23 +37,28 @@ Preparation for partial/total power outage.
 Recovery from partial/total power outage.
 
 1. Verify power to:
-   1. Control room switch (visible from front)
-   1. Instrument room switch (visible from rear)
-   1. Instrument room Time Server
+   - Control room switch (visible from front)
+   - Instrument room switch (visible from rear)
+   - Instrument room Time Server
 1. Wait for Time Server lock
    - GPS Status should show: `IN: GPS` and `GPS: LOCK`
    - Current UTC time incrementing
 1. Press and quickly release power buttons on computers
-    1. DAQS server
-    1. MISC server
-    1. Workstation 1
-    1. Workstation 2
+    - DAQS server
+    - MISC server
+    - Workstation 1
+    - Workstation 2
 1. Switch on power to all Quartz Chassis
 1. Verify Workstation boot (repeat for each)
     1. Connect KVM console to Workstation 1 or 2
     1. Should see Desktop (autologin to default user)
     1. Use the icon on Desktop to launch the `Phoebus` application.
     1. Select the `Main` tab.
+1. Check that the Archiver is running
+    1. Click on the "EPICS Archiver Application" desktop icon
+    1. (Alternate) Open a web browser and navigate to `http://192.168.83.101:17665/mgmt/ui/reports.html`
+    1. Click on `Reports` and select `Currently disconnected PVs`
+    1. Notify support if result table has entries other than: "no data found"
 1. Proceed to Recovery and Troubleshooting
 
 ## Recovery and Troubleshooting
@@ -67,9 +82,9 @@ or when it is otherwise desirable to ascertain system health.
 1. If any `Samp. Clk. Lock` shows `Unlock`
     1. If Node 01, check Time Server Pulse Per Second (PPS) connection
     1. If another node, contact support
-1. If any DRDY status show `Misalign` for more than 5 seconds
+1. If any DRDY status show `Skew` for more than 5 seconds
     1. Contact support
-1. If any DRDY status shows `Out of Sync`.
+1. If any DRDY status shows `Spread`.
     1. Click Global Align
     1. Wait 10 seconds
     1. If still out of sync. contact support
