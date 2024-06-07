@@ -22,7 +22,7 @@ or when it is otherwise desirable to ascertain system health.
 1. If any DRDY status show `Skew` for more than 5 seconds
     1. Contact support
 1. If any DRDY status shows `Spread`.
-    1. Click Global Align
+    1. Click Global Align (at top)
     1. Wait 10 seconds
     1. If still out of sync. contact support
 1. Set `ADC Acquire` to `Enable`

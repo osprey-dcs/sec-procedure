@@ -19,7 +19,7 @@ at the start of each day on which records will be collected.
 
 ## Start Acquisition
 
-1. Open the `Acq. Control` OPI.
+1. Open the `Acq. Control` OPI (`Main` -> `Acq. Recording` -> `Control`).
 1. Ensure `System Ready?` shows `Ready`.
     1. If not, repeat [Inspecting the Current State and Health](healthcheck.md) of the system and then re-load CCCR.
     1. If not successful, contact support.
@@ -39,7 +39,7 @@ Note that `Can Start?` will show `Not ready` while an acquisition is running.
 While acquisition is in-progress, observe that:
 
 - On `Acq. Recording` Monitor or Expert screens.
-    - Ensure `Can Start?` continues to show `Ready`.
+    - Ensure `System Ready?` continues to show `Ready`.
     - Recording is in progress for selected chassis.
     - Packet drop rate counters remain zero.
     - File size(s) increasing.
