@@ -33,3 +33,5 @@ Exported data files may be placed under `/export`.
 
 Under the `Help` menu, see `Button/Wheel Shortcuts` for details
 on zooming.
+
+![viewer application](img/previewer.png)

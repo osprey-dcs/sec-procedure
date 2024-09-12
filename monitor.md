@@ -13,3 +13,5 @@ Previous completion of [Inspecting the Current State and Health](healthcheck.md)
     1. Enable `ADC Acquire` from the `Main` OPI (or other screens on which this control appears)
 1. If the lower, frequency domain plot is not updating
     1. Click on `Enable` by the `FFT Enable` control below this plot
+
+![Chassis Scope](img/chassis-scope.png)

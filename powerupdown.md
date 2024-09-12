@@ -3,13 +3,11 @@
 Covers global system power down and up,
 as well as system recovery after individual chassis power cycle.
 
-See Reference photos section below.
-
 ## Note on Computer Shutdown
 
-Each computer may be requested to shutdown by one of the following methods
+Each computer may be requested to shutdown gracefully by one of the following methods
 
-- Press and quickly release power button
+- Press and quickly release power button.  See Reference photos section below for button locations.
 - Issue a `sudo poweroff`
 - For Workstations only.  Select `Shutdown` from the system menu (lower left corner)
 
@@ -20,7 +18,7 @@ Preparation for partial/total power outage.
 If possible, save open documents on Workstations.
 
 1. Switch off power to all 32x Quartz Chassis in the Instrument room
-1. Initiate a graceful shutdown of each computer
+1. Initiate a graceful shutdown of each computer by one of the means listed above.
     1. DAQS server (Instrument room)
     1. MISC server (Control room)
     1. Workstation 1 (Control room)

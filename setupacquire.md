@@ -4,7 +4,7 @@
 
 Successful completion of [Inspecting the Current State and Health](healthcheck.md) of the system.
 
-It is necessary to repeat Recovery and Troubleshooting after
+It is necessary to repeat Inspecting the Current State and Health after
 any chassis is power cycled or otherwise reset.
 
 It is recommended to repeat [Inspecting the Current State and Health](healthcheck.md) of the system
@@ -59,3 +59,5 @@ While acquisition is in-progress, observe that:
 1. On `Success` the `Last Completed File` will update with the full path.
    of the newly created `.hdr`.
     1. Hint: May select and copy+paste into `viewer` Open dialog.
+
+![Acquisition Control](img/acq-control.png)
